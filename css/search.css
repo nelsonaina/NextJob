@@ -1,0 +1,101 @@
+/* search tab style */
+
+#helpMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px;
+}
+
+#searchHero {
+  text-shadow: 1px 1px 200px;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 20px 10px 30px;
+}
+
+#pickers {
+  display: flex;
+  flex-direction: column;
+}
+
+#pickers label {
+  font-size: 0.9rem;
+}
+
+#pickers select {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: var(--myColor-background);
+  color: var(--myColor-color);
+  cursor: pointer;
+}
+
+.searchTextButton {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: var(--myColor-color);
+  border-radius: 20px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: var(--myColor-background);
+  transition: 0.5s;
+}
+
+.searchTextButton:hover {
+  transition: 0.5s;
+  background-color: var(--mycolor-secondBackground);
+  color: var(--myColor-colorHover);
+}
+
+#searchError {
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: red;
+  padding: 10px 20px;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.information {
+  width: 80%;
+}
+
+.listClass {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  background-color: var(--mycolor-searchCard);
+  box-shadow: 0 10px 30px var(--mycolor-cardBoxShadow);
+  border: 2px solid #e5e5e5;
+  padding: 30px;
+  margin: 10px 0px;
+}
+
+.listClass li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--myColor-searchColor);
+}
+
+@media (max-width: 42em) {
+  .listClass {
+    padding: 30px;
+    margin: 10px 0px;
+  }
+
+  .listClass li {
+    padding: 10px;
+    font-size: 0.8em;
+    border-bottom: 1px solid;
+  }
+}

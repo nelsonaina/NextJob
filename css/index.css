@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --myColor-background: #ffffff;
+  --myColor-color: #000000;
+  --myColor-colorHover: #ffffff;
+  --mycolor-footerBackground: #000000;
+  --mycolor-secondBackground: #000000;
+  --myColor-footerWhite: #ffffff;
+  --mycolor-footerHover: #ede6db;
+  --mycolor-searchCard: #ffffff;
+  --mycolor-cardBoxShadow: rgba(0, 0, 0, 0.127);
+  --mycolor-menu: #ffffff;
+
+  --myColor-logocolor: #ffffff;
+  --myColor-searchColor: black;
+  --myColor-secondary: #9b9b9b;
+  --mycolor-searchCardBorder: #e5e5e5;
+  --ff-title: "Open Sans", sans-serif;
+}
+
+.darkMode {
+  --myColor-background: #141414;
+  --myColor-color: #fff;
+  --myColor-colorHover: #000000;
+  --mycolor-footerBackground: #ede6db;
+  --mycolor-secondBackground: #9b9b9b;
+  --myColor-footerWhite: black;
+  --mycolor-footerHover: #ffffff;
+  --mycolor-searchCard: #ede6db;
+  --mycolor-cardBoxShadow: rgba(255, 255, 255, 0.127);
+  --mycolor-menu: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--mycolor-secondBackground);
+  color: var(--myColor-color);
+  font-family: var(--ff-title);
+  padding: 0px 75px;
+  transition: 0.5s;
+}
+
+.drop {
+  display: none;
+}
+
+#container {
+  background-color: var(--myColor-background);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+.fa-brands.fa-connectdevelop {
+  color: var(--myColor-color);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 4em;
+}
+
+.dropDown {
+  display: none;
+  padding: 10px 13px;
+  border: 1px solid;
+  border-radius: 25px;
+  cursor: pointer;
+  color: var(--myColor-color);
+  transition: 0.5s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background-color: var(--mycolor-menu);
+}
+
+#navButtonsDropDown a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--myColor-color);
+  border-radius: 30px;
+  margin: 0px 3px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+#navButtonsDropDown a:hover {
+  transition: 0.5s;
+  background-color: var(--mycolor-secondBackground);
+  color: var(--myColor-colorHover);
+}
+
+#modeBtn {
+  background-color: var(--mycolor-secondBackground);
+  padding: 10px 13px;
+
+  border: 1px solid;
+  border-color: var(--myColor-color);
+  border-radius: 25px;
+  cursor: pointer;
+  color: var(--myColor-logocolor);
+}
+
+#modeBtn:hover {
+  transition: 0.5s;
+  background-color: var(--mycolor-secondBackground);
+}
+
+.fa-regular.fa-moon.fa-2x {
+  text-decoration: none;
+}
+
+#mainText {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* background-color: blueviolet; */
+  padding: 250px 70px 290px;
+  height: auto;
+}
+
+#hero {
+  width: 50%;
+}
+
+#heroText {
+  font-size: 4em;
+  letter-spacing: -4px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+#bolder {
+  font-size: 4.5rem;
+}
+#smallHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  padding: 30px 20px;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#smallHeroText {
+  font-size: 1.2em;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.mainTextButton {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--myColor-color);
+  border-radius: 30px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.mainTextButton:hover {
+  transition: 0.5s;
+  background-color: var(--mycolor-secondBackground);
+  color: var(--myColor-colorHover);
+}
+
+#footer {
+  background-color: var(--mycolor-footerBackground);
+  color: var(--myColor-secondary);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+#anythingFr {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  padding: 75px 60px 120px;
+  align-items: center;
+}
+
+#logoPart {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#secondLogo {
+  color: var(--myColor-footerWhite);
+}
+
+#address {
+  cursor: default;
+}
+
+#logoAddress p {
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+#logoAddress p:hover {
+  color: var(--mycolor-footerHover);
+}
+
+#logoBrother p {
+  display: grid;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 0px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+#logoBrother p:hover {
+  color: var(--mycolor-footerHover);
+}
+
+.mediaLogos {
+  padding: 20px;
+}
+
+.mediaLogos i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mediaLogos i:hover {
+  color: var(--mycolor-footerHover);
+}
+
+#emailAndButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#emailText {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: var(--myColor-secondary);
+  background-color: var(--mycolor-footerBackground);
+  color: var(--myColor-footerWhite);
+}
+
+#emailBtn {
+  background-color: var(--myColor-searchColor);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--myColor-logocolor);
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: var(--myColor-colorHover);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#emailBtn:hover {
+  color: var(--myColor-searchColor);
+  background-color: var(--myColor-logocolor);
+}
+
+#allInformation {
+  display: flex;
+  font-size: 1.1rem;
+
+  max-width: 100%;
+}
+
+.myUl {
+  padding: 0px 20px;
+}
+
+.myL {
+  list-style-type: none;
+  padding: 0px 10px;
+  font-weight: bold;
+  color: var(--myColor-footerWhite);
+  cursor: default;
+}
+
+.myLi {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.myLi a {
+  color: var(--myColor-secondary);
+  text-decoration: none;
+  transition: 0.3s;
+  flex: 1 1 auto;
+}
+
+.myLi a:hover {
+  color: var(--mycolor-footerHover);
+}
+
+.myLi b {
+  color: var(--mycolor-footerHover);
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#lastText {
+  border-top: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 35px;
+}
+
+#lastText p {
+  font-size: 1.1rem;
+}
+
+#lastTextLink {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.lastTextLink {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lastTextLink:hover {
+  color: var(--mycolor-footerHover);
+}
+
+/* first before ipad */
+@media (max-width: 74.5em) {
+  #heroText {
+    font-size: 3em;
+    text-align: center;
+  }
+  #anythingFr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 75px 40px 120px;
+  }
+  #allInformation {
+    order: 2;
+  }
+  #logoPart {
+    order: 1;
+  }
+  #emailAndButton {
+    order: 3;
+  }
+}
+
+/* ipad */
+@media (max-width: 54em) {
+  body {
+    padding: 10px;
+  }
+  #mainText {
+    padding: 150px 70px 290px;
+  }
+  #anythingFr {
+    padding: 50px 10px 70px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  #allInformation {
+    order: 3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 1em;
+  }
+  #logoPart {
+    order: 1;
+    padding: 0px 0px 0px 30px;
+  }
+  #emailAndButton {
+    order: 2;
+  }
+
+  #anythingFr {
+    grid-template-columns: 1fr;
+    padding: 75px 40px 120px;
+    gap: 30px;
+  }
+  #allInformation {
+    order: 3;
+    flex-direction: column;
+    font-size: 0.6em;
+  }
+  #logoPart {
+    order: 1;
+    padding: 0;
+  }
+  #emailAndButton {
+    order: 2;
+  }
+  #emailAndButton {
+    padding: 5px;
+  }
+  #logoPart {
+    font-size: 0.7em;
+  }
+  #logoAddress p {
+    font-size: 0.7rem;
+  }
+  #logoBrother p {
+    font-size: 0.7rem;
+  }
+  #emailText {
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #emailBtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  /* i did something abive this edit it  */
+
+  #lastTextLink p {
+    font-size: 0.7rem;
+  }
+  #lastText p {
+    font-size: 0.7rem;
+  }
+}
+
+/* before phone */
+@media (max-width: 42em) {
+  body {
+    padding: 0;
+  }
+  #modeBtn {
+    padding: 10px 13px;
+  }
+  .header {
+    padding: 40px 0px;
+  }
+  #navButtons a {
+    padding: 6px 12px;
+  }
+  #modeBtn {
+    padding: 6px 9px;
+  }
+  .fa-brands.fa-connectdevelop {
+    font-size: 3em;
+  }
+  #mainText {
+    flex-direction: column;
+    padding: 100px 50px 100px;
+    align-items: center;
+  }
+  #hero {
+    width: auto;
+  }
+  #heroText {
+    font-size: 3em;
+  }
+  #smallHero {
+    width: auto;
+    padding: 5px;
+  }
+  #anythingFr {
+    grid-template-columns: 1fr;
+    padding: 75px 40px 120px;
+    gap: 30px;
+  }
+  #allInformation {
+    order: 3;
+    flex-direction: column;
+    font-size: 0.6em;
+  }
+  #logoPart {
+    order: 1;
+    padding: 0;
+  }
+  #emailAndButton {
+    order: 2;
+  }
+  #emailAndButton {
+    padding: 5px;
+  }
+  #logoPart {
+    font-size: 0.7em;
+  }
+  #logoAddress p {
+    font-size: 0.7rem;
+  }
+  #logoBrother p {
+    font-size: 0.7rem;
+  }
+  #emailText {
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #emailBtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .settings {
+    flex-wrap: wrap;
+  }
+  .listClass {
+    padding: 30px;
+    margin: 10px 0px;
+  }
+  .paragraphClass {
+    padding: 10px;
+    font-size: 1px;
+  }
+}
+
+/* for nav button */
+@media (max-width: 33em) {
+  .header {
+    justify-content: center;
+  }
+  #mainText {
+    flex-direction: column;
+    padding: 30px 30px 70px;
+    align-items: center;
+  }
+  .navButtonsDropDown {
+    display: none;
+  }
+  #modeBtn {
+    padding: 4px 7px;
+  }
+  .fa-brands.fa-connectdevelop {
+    font-size: 2.5em;
+  }
+  .drop {
+    display: inline-block;
+    margin: 30px;
+    width: 150px;
+    text-align: left;
+  }
+  .drop label {
+    width: 100%;
+    position: absolute;
+    line-height: 45px;
+    top: 0px;
+    left: 0px;
+    background-color: var(--myColor-background);
+    padding-left: 20px;
+    font-weight: 700;
+    -webkit-transition: 0.04s ease-in-out;
+    transition: 0.04s ease-in-out;
+    border-bottom: 1px solid;
+  }
+
+  .drop label:hover {
+    background-color: var(--mycolor-secondBackground);
+    color: var(--myColor-colorHover);
+  }
+  .list {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 0px;
+    border-top: 1px solid;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  .itemDrop {
+    width: 100%;
+    line-height: 45px;
+    padding-left: 20px;
+    background-color: var(--myColor-background);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    font-size: 0.9em;
+    border-bottom: 1px solid;
+  }
+  .itemDrop:hover {
+    background-color: var(--mycolor-secondBackground);
+    color: var(--myColor-colorHover);
+  }
+  #drop-1:checked ~ .list-1 {
+    visibility: visible;
+    opacity: 2;
+    z-index: 10;
+  }
+}
+
+/* phone */
+@media (max-width: 27em) {
+  #logoPart {
+    align-items: center;
+  }
+  #anythingFr {
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px 100px;
+  }
+  #logoBrother p {
+    align-items: center;
+    justify-content: center;
+  }
+  #allInformation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.6em;
+  }
+  #emailAndButton {
+    justify-content: space-around;
+  }
+  #emailText {
+    padding: 5px;
+    border-radius: 10px;
+  }
+  #emailBtn {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  #lastText {
+    padding: 10px 20px;
+  }
+  #lastText p {
+    font-size: 7px;
+  }
+  #lastTextLink {
+    padding: 0;
+    font-size: 7px;
+  }
+}
+
+/* tiny phone */
+@media (max-width: 375px) {
+  #heroText {
+    font-size: 2em;
+    letter-spacing: -2px;
+  }
+  #heroText b {
+    font-size: 1em;
+  }
+  #smallHeroText {
+    font-size: 1em;
+    letter-spacing: -0.5px;
+  }
+}
